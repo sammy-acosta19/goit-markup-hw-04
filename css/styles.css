@@ -1,0 +1,275 @@
+
+:root {
+    --primary-black-color: #212121;
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --accent-color: #2196f3;
+    --background-black: #21303a;
+    --background-gray: #f5f4fa;
+    --button-filter: #f5f4fa;
+    --button-primary-hover: #188ce8;
+    --logo-black: #000000;
+    --text-white-opacity: #ffffff99;
+    --container-padding: calc((100% - 1200px) / 2);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto","raleway" ,sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .logo-black {
+    color: var(--logo-black);
+  }
+  .logo-white {
+    color: var(--primary-white-color);
+  }
+  section {
+  padding: 94px;
+  }
+  section > h2 {
+    color:var(--primary-black-color);
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .no-top-pading {
+    padding-top: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+   list-style: none;
+  }
+
+ /* ----------- Header section ----------- */
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ECECEC;    
+    height: 80px;
+    padding: 0 var(--container-padding);
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  header nav .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  header nav .menu-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+  }
+  header nav .menu-nav-list .page {
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  .menu-nav-contacts {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+  }
+  .menu-nav-contacts .item {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .menu-nav-list .page:hover,
+  .menu-nav-list .page:focus,
+  .menu-nav-list .page.current,
+  .menu-nav-contacts .item:hover,
+  .menu-nav-contacts .item:focus {
+    color: var(--accent-color);
+  }
+  /* ----------- Bg fondo section ----------- */
+  .bg-fondo {
+    background-color: var(--primary-black-color);
+    padding: 200px var(--container-padding);
+    text-align: center;
+  }
+  .bg-fondo .main-title {
+    width: 500px;
+    margin: 20px auto;
+    color: var(--primary-white-color);
+    font-size: 44px;
+    text-transform: capitalize;
+  }  
+  .button-primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+  }
+  .button-primary:hover {
+    background-color: var(--button-primary-hover);
+    cursor: pointer;
+  }
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+ 
+  /* ----------- Details section ----------- */
+  .details-list {
+    display: flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-evenly;
+  }
+  .details-list li {
+    list-style: none;
+    width: 240px;
+  }
+  .details-list li .title {
+    height: 50px;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+  }
+  /* ----------- Servis section----------- */
+  .servis .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .servis .container ul li {
+    list-style: none;
+    width: 360px;
+  }
+  /*----------- Professions section -----------*/
+  .professions {
+    background-color: var(--background-gray);
+  }
+  .professions-work {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top:50px ;
+  }
+  .professions-work  li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;    
+    background-color: var(--primary-white-color);
+    text-align: center;
+    list-style: none;
+  }
+  .professions-work li h3 {
+    margin: 20px 0 10px 0;
+  }
+  .professions-work li p {
+    margin-bottom: 30px;
+} 
+
+  /*----------- Portfolio section -----------*/
+  .products-portafolio .list-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    list-style: none;
+  }
+  .products-portafolio .list-buttons li button {
+    border: none;
+    outline: none;
+    color: var(--primary-black-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .products-portafolio .list-buttons li button:hover,
+  .products-portafolio .list-buttons li button.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
+  .products-portafolio .list-cards{
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    display: flex;
+  }
+  .products-portafolio .list-cards li{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 20px;     
+    margin-bottom: 20px; 
+    width: 370px;
+  }
+  .products-portafolio .list-cards li a h2{
+    color: var(--primary-black-color);
+    padding: 15px;
+  }
+  .products-portafolio .list-cards li a p{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    padding: 15px;
+  }
+  /*----------- footer section ----------- */
+  footer {
+    padding: 94px var(--container-padding);
+    background-color: var(--background-black);
+  }
+  address ul {
+    list-style: none;
+  }
+  address .contact {
+    display: block;
+    color: var(--text-white-opacity);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+ address .location{
+  color: var(--primary-white-color);
+ } 
+  address .contact:hover {
+    color: var(--primary-white-color);
+  }
