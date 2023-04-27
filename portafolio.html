@@ -9,18 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/modern-normalize.css">
   <link rel="stylesheet" href="css/styles.css" />
-  <title>tarea de casa 1 sin CCS</title>
+  <title>WEB STUDIO</title>
 
 </head>
 
 <body>
   <!-- ENCABEZADO -->
   <header class="page-header">
+    <div class="container">
     <nav>
       <!-- LOGO -->
       <a class="logo" href="./index.html">WebStudio</a>
       <!-- MENU -->
-        <ul class="menu-nav-list">
+        <ul class="nav-menu">
           <li><a class="page" href="./index.html">Estudio</a></li>
           <li><a class="page current" href="./portafolio.html">Portafolio</a></li>
           <li><a class="page" href="">Contactos</a></li>
@@ -28,15 +29,31 @@
 
       </nav>
       <!-- CONTACTOS -->
-      <ul class="menu-nav-contacts">
-        <li><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="item" href="tel:+525555296000">+525555296000</a></li>
+      <ul class="contacts-menu">
+        <li>
+          <a class="item" href="#">
+            <svg class="icon" width="16" height="12">
+              <use href="./images/SVG/icons.svg#email"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+      
+        <li>
+          <a class="item" href="#">
+            <svg class="icon" width="10" height="16">
+              <use href="./images/SVG/icons.svg#smartphone"></use>
+            </svg>
+            +525555296000
+          </a>
+        </li>
       </ul>
-  </header>
+      </div>
+      </header>
   <!-- SECCION MEIN --> 
   <main>
     <!--SECTION - PORTAFOLIO  -->
-    <section class="products-portafolio">
+    <section class="portafolio">
       <div class="container">
       <!-- BOTONES - PORTAFOLIO -->
       <ul class="list-buttons">
@@ -130,7 +147,7 @@
       <address>
         <ul>
           <li>
-            <a class="location">Calz. Ticomán 500, Ciudad de México,CDMX, México</a>
+            <a class="contact">Calz. Ticomán 500, Ciudad de México,CDMX, México</a>
           </li>
           <li> 
              <a class="contact" href="mailto:info@example.com">info@devstudio.com</a>
@@ -140,7 +157,41 @@
           </li>
         </ul> 
       </address>
+      <aside>
+        <p>ENCUENTRENOS EN</p>
+        <ul>
+          <li>
+            <a href="#">
+              <svg class="icon" width="20" height="20">
+                <use href="./images/SVG/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" width="20" height="20">
+                <use href="./images/SVG/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" width="20" height="20">
+                <use href="./images/SVG/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" width="20" height="20">
+                <use href="./images/SVG/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </aside>
     </div>
+
   </footer>  
 </body>
 
