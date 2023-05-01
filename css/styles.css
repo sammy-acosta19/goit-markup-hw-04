@@ -198,10 +198,6 @@ header .container .contacts-menu li .item:hover .icon {
   margin-bottom: 15px;
   width: 270px;
 }
-.benefits .container .benefits-list li div .icon-benefits {
-  
-}
-
 .benefits .container .benefits-list li {
   list-style: none;
   width: 270px;
@@ -231,8 +227,8 @@ header .container .contacts-menu li .item:hover .icon {
   width: 360px;
 }
 /*----------- professions section -----------*/
-.professions {
-  background-color: var(---gray-1);
+.professions  {
+  background-color: var(--gray-1);
 }
 .professions .container h2 {
   color: var(--primary-black-color);
@@ -306,14 +302,12 @@ header .container .contacts-menu li .item:hover .icon {
   padding: 30px 0;
   text-align: center;
 }
-
 .customers .container ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
-
 .customers .container ul li {
   display: flex;
   align-items: center;
@@ -417,23 +411,27 @@ footer .container address .contact:hover {
   color: var(--primary-white-color);
 }
 footer .container aside p {
-  color: var(--primary-white-color);
   display: flex;
-  justify-content: center;
+  color: var(--primary-white-color);
   font-weight: 700;
   margin-bottom: 20px;
 }
+footer .container aside p {
+  display: flex;
+  justify-content:center;
+
+}
 footer .container aside ul {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 10px;
 }
 footer .container aside ul li{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   background-color: var(--primary-white-10Perc);
   border-radius: 25px;
   box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px  ;
